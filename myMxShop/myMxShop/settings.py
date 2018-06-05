@@ -11,10 +11,13 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+import sys
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+#将所有的app放入apps中 将第三方app放入extra_apps
+sys.path.insert(0,BASE_DIR)
+sys.path.insert(0,os.path.join(BASE_DIR,"apps"))
+sys.path.insert(0,os.path.join(BASE_DIR,"extra_apps"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -38,6 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #注册xadmin
+    'xadmin',
+    'crispy_forms',
+    #注册富文本编辑器
+    'DjangoUeditor',
+    #注册reset_framework
+    'rest_framework',
+    #注册应用apps
+    'users',
+    'goods',
+    'trade',
+    'user_operation'
 ]
 
 MIDDLEWARE = [
@@ -122,8 +136,11 @@ USE_L10N = True
 
 USE_TZ = False
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+AUTH_USER_MODEL= 'users.UserProfile' #重载系统用户,让UserProfile生效
 STATIC_URL = '/static/'
+#设置meida的保存路径
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")

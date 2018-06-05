@@ -2,7 +2,9 @@ django
 pillow
 mysqlclient
 djangorestframework-jwt
+django-import-export
 djangorestframework
+django-bootstrap-form
 markdown
 django-filter
 django-crispy-forms

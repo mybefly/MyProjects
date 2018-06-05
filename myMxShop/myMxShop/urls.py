@@ -15,9 +15,18 @@ Including another URLconf
 """
 # from django.contrib import admin
 #不适用默认admin,使用xadmin
-from django.urls import path
+from django.urls import path,include
 import xadmin
+from django.views.static import serve
+from myMxShop.settings import MEDIA_ROOT
+from goods.view_base import GoodsListView
+
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    #xadmin 配置
     path('xadmin/', xadmin.site.urls),
+    path('ueditor/',include('DjangoUeditor.urls')),
+    path('media/<path:path>',serve,{'document_root':MEDIA_ROOT}),
+    #个人接口配置
+    path('goods/',GoodsListView.as_view(),name='goods-list')
+
 ]
