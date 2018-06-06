@@ -13,7 +13,7 @@ class BaseSetting(object):
 class GlobleSetting(object):
     site_title = "My MxShop"  #导航左上角头部设置
     site_footer = "http://www.baidu.com"  #页脚设置
-    menu_stye = 'accordion' #导航样式
+    menu_style = "accordion" #导航样式
 
 #注册的model 在后台的显示配置
 class VerifyCodeAdmin(object):

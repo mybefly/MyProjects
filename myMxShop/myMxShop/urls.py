@@ -18,15 +18,31 @@ Including another URLconf
 from django.urls import path,include
 import xadmin
 from django.views.static import serve
+#导入drf的文档管理urls
+from rest_framework.documentation import include_docs_urls
 from myMxShop.settings import MEDIA_ROOT
-from goods.view_base import GoodsListView
+#from goods.view_base import GoodsListView
+from goods.views import GoosListViewSet
+from users.views import UserList
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()    #实例化 DefaultRouter
+router.register("goods",GoosListViewSet)
 
 urlpatterns = [
     #xadmin 配置
     path('xadmin/', xadmin.site.urls),
     path('ueditor/',include('DjangoUeditor.urls')),
     path('media/<path:path>',serve,{'document_root':MEDIA_ROOT}),
+    #drf文档路由,title为标题
+    path('docs/',include_docs_urls(title='练习生鲜系统')),
+    #配置drf的urls
+    path('api-auth/',include_docs_urls('rest_framework.urls')),
+
     #个人接口配置
-    path('goods/',GoodsListView.as_view(),name='goods-list')
+    path('^',include('router.urls')),
+    #path('goods/',GoosListView.as_view(),name='goods-list'),
+    path('users/',UserList.as_view(),name='users-list')
+
 
 ]

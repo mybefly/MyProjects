@@ -1,5 +1,5 @@
 django
-pillow
+pillow                  #图片支持
 mysqlclient
 djangorestframework-jwt
 django-import-export
@@ -14,3 +14,5 @@ future
 httplib2
 six
 pymysql
+coreapi                  #drf的文档支持
+django-guardian          #drf对象级别的权限支持

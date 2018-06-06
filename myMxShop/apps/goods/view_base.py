@@ -33,9 +33,9 @@ class GoodsListView(View): #通用视图
         '''
         第三种 使用Django.core 自带的serializable 序列化
         '''
+        import json
         from django.core import serializers
         from django.http import JsonResponse
-        import json
 
         json_data = serializers.serialize("json",goods)
         json_data = json.loads(json_data)
