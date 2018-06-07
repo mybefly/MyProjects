@@ -1,0 +1,2 @@
+#!/bin/bash
+python /Users/zhaichuang/Downloads/sqlmapproject-sqlmap-1c737d7/sqlmap.py -u "http://172.16.56.199/tpl/%E5%BE%AE%E5%93%A8%E9%9D%9E%E5%B8%B8%E8%AE%BE%E6%9C%BA%E6%9E%84%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xls" --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/89.log

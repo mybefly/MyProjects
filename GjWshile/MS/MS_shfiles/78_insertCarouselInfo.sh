@@ -1,0 +1,2 @@
+#!/bin/bash
+python /Users/zhaichuang/Downloads/sqlmapTools/sqlmap.py -u 'http://172.16.56.199/api/whistleMS/index.php' --data 'm=carousel&a=insertCarouselInfo&device_type=web&school=ligong&verify=admin_ligong_MS_ligong__web__5a5f308da9efe__216b8a4119eec5a569326798cb336b7b__86269202-142f-4740-99b2-21324ea1c133&url=baidu.com&pic_uri=http://whistle.ruijie.com.cn:50202/group1/M00/02/F4/rBA4r1pfMsSIX_01AABDSxNA_oMAAAAOwrtqi4AAENj7747027&num=12323&auth_type=1&data={}' --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/78_insertCarouselInfo.log

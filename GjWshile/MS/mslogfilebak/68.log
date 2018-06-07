@@ -1,0 +1,211 @@
+        ___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.0.12.16#dev}
+|_ -| . ["]     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting at 21:08:56
+
+[21:08:57] [INFO] testing connection to the target URL
+[21:08:57] [INFO] checking if the target is protected by some kind of WAF/IPS/IDS
+[21:08:57] [CRITICAL] heuristics detected that the target is protected by some kind of WAF/IPS/IDS
+do you want sqlmap to try to detect backend WAF/IPS/IDS? [y/N] N
+[21:08:57] [WARNING] dropping timeout to 10 seconds (i.e. '--timeout=10')
+[21:08:57] [INFO] testing if the target URL is stable
+[21:08:58] [INFO] target URL is stable
+[21:08:58] [INFO] testing if POST parameter 'm' is dynamic
+[21:08:58] [INFO] confirming that POST parameter 'm' is dynamic
+[21:08:58] [INFO] POST parameter 'm' is dynamic
+[21:08:58] [WARNING] heuristic (basic) test shows that POST parameter 'm' might not be injectable
+[21:08:58] [INFO] testing for SQL injection on POST parameter 'm'
+[21:08:58] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:08:58] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:08:58] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:08:59] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:08:59] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:08:59] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:08:59] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:08:59] [INFO] testing 'MySQL inline queries'
+[21:08:59] [INFO] testing 'PostgreSQL inline queries'
+[21:08:59] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:08:59] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:08:59] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:08:59] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:00] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:00] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:00] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:00] [INFO] testing 'Oracle AND time-based blind'
+[21:09:00] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:00] [WARNING] using unescaped version of the test because of zero knowledge of the back-end DBMS. You can try to explicitly set it with option '--dbms'
+[21:09:01] [WARNING] POST parameter 'm' does not seem to be injectable
+[21:09:01] [INFO] testing if POST parameter 'a' is dynamic
+[21:09:01] [INFO] confirming that POST parameter 'a' is dynamic
+[21:09:01] [INFO] POST parameter 'a' is dynamic
+[21:09:01] [WARNING] heuristic (basic) test shows that POST parameter 'a' might not be injectable
+[21:09:01] [INFO] testing for SQL injection on POST parameter 'a'
+[21:09:01] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:02] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:02] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:02] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:02] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:02] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:02] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:02] [INFO] testing 'MySQL inline queries'
+[21:09:02] [INFO] testing 'PostgreSQL inline queries'
+[21:09:02] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:02] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:03] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:03] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:03] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:03] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:03] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:03] [INFO] testing 'Oracle AND time-based blind'
+[21:09:04] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:04] [WARNING] POST parameter 'a' does not seem to be injectable
+[21:09:04] [INFO] testing if POST parameter 'device_type' is dynamic
+[21:09:04] [INFO] confirming that POST parameter 'device_type' is dynamic
+[21:09:05] [INFO] POST parameter 'device_type' is dynamic
+[21:09:05] [WARNING] heuristic (basic) test shows that POST parameter 'device_type' might not be injectable
+[21:09:05] [INFO] testing for SQL injection on POST parameter 'device_type'
+[21:09:05] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:05] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:05] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:05] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:06] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:06] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:06] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:06] [INFO] testing 'MySQL inline queries'
+[21:09:06] [INFO] testing 'PostgreSQL inline queries'
+[21:09:06] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:06] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:06] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:07] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:07] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:07] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:07] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:07] [INFO] testing 'Oracle AND time-based blind'
+[21:09:07] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:09] [WARNING] POST parameter 'device_type' does not seem to be injectable
+[21:09:09] [INFO] testing if POST parameter 'school' is dynamic
+[21:09:09] [INFO] confirming that POST parameter 'school' is dynamic
+[21:09:09] [INFO] POST parameter 'school' is dynamic
+[21:09:09] [WARNING] heuristic (basic) test shows that POST parameter 'school' might not be injectable
+[21:09:09] [INFO] testing for SQL injection on POST parameter 'school'
+[21:09:09] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:10] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:10] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:10] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:10] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:10] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:10] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:10] [INFO] testing 'MySQL inline queries'
+[21:09:10] [INFO] testing 'PostgreSQL inline queries'
+[21:09:10] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:10] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:11] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:11] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:11] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:11] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:11] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:12] [INFO] testing 'Oracle AND time-based blind'
+[21:09:12] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:13] [WARNING] POST parameter 'school' does not seem to be injectable
+[21:09:13] [INFO] testing if POST parameter 'verify' is dynamic
+[21:09:13] [WARNING] POST parameter 'verify' does not appear to be dynamic
+[21:09:13] [WARNING] heuristic (basic) test shows that POST parameter 'verify' might not be injectable
+[21:09:13] [INFO] testing for SQL injection on POST parameter 'verify'
+[21:09:13] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:14] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:14] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:14] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:15] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:15] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:15] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:15] [INFO] testing 'MySQL inline queries'
+[21:09:15] [INFO] testing 'PostgreSQL inline queries'
+[21:09:15] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:15] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:15] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:15] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:16] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:16] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:16] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:16] [INFO] testing 'Oracle AND time-based blind'
+[21:09:16] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:18] [WARNING] POST parameter 'verify' does not seem to be injectable
+[21:09:18] [INFO] testing if POST parameter 'username' is dynamic
+[21:09:18] [WARNING] POST parameter 'username' does not appear to be dynamic
+[21:09:18] [WARNING] heuristic (basic) test shows that POST parameter 'username' might not be injectable
+[21:09:18] [INFO] testing for SQL injection on POST parameter 'username'
+[21:09:18] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:19] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:19] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:19] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:19] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:19] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:19] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:19] [INFO] testing 'MySQL inline queries'
+[21:09:19] [INFO] testing 'PostgreSQL inline queries'
+[21:09:19] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:19] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:20] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:20] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:20] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:20] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:20] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:20] [INFO] testing 'Oracle AND time-based blind'
+[21:09:21] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:22] [WARNING] POST parameter 'username' does not seem to be injectable
+[21:09:22] [INFO] testing if POST parameter 'opt' is dynamic
+[21:09:22] [WARNING] POST parameter 'opt' does not appear to be dynamic
+[21:09:22] [WARNING] heuristic (basic) test shows that POST parameter 'opt' might not be injectable
+[21:09:22] [INFO] testing for SQL injection on POST parameter 'opt'
+[21:09:22] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:23] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:23] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:23] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:24] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:24] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:24] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:24] [INFO] testing 'MySQL inline queries'
+[21:09:24] [INFO] testing 'PostgreSQL inline queries'
+[21:09:24] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:24] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:24] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:24] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:24] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:25] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:25] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:25] [INFO] testing 'Oracle AND time-based blind'
+[21:09:25] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:27] [WARNING] POST parameter 'opt' does not seem to be injectable
+[21:09:27] [INFO] testing if POST parameter 'account_type' is dynamic
+[21:09:27] [WARNING] POST parameter 'account_type' does not appear to be dynamic
+[21:09:27] [WARNING] heuristic (basic) test shows that POST parameter 'account_type' might not be injectable
+[21:09:27] [INFO] testing for SQL injection on POST parameter 'account_type'
+[21:09:27] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:09:28] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[21:09:28] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[21:09:28] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:09:28] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:09:28] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:09:28] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[21:09:28] [INFO] testing 'MySQL inline queries'
+[21:09:28] [INFO] testing 'PostgreSQL inline queries'
+[21:09:28] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[21:09:28] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:09:29] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:09:29] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:09:29] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[21:09:29] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:09:29] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:09:30] [INFO] testing 'Oracle AND time-based blind'
+[21:09:30] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:09:31] [WARNING] POST parameter 'account_type' does not seem to be injectable
+[21:09:31] [CRITICAL] all tested parameters appear to be not injectable. Try to increase '--level'/'--risk' values to perform more tests. Also, you can try to rerun by providing either a valid value for option '--string' (or '--regexp'). If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could retry with an option '--tamper' (e.g. '--tamper=space2comment')
+
+[*] shutting down at 21:09:31
+
