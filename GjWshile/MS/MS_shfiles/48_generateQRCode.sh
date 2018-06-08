@@ -1,2 +1,0 @@
-#!/bin/bash
-python /Users/zhaichuang/Downloads/sqlmapTools/sqlmap.py -u 'http://172.16.56.199/api/whistleMS/index.php' --data 'm=qrcode&a=generateQRCode&device_type=web' --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/48_generateQRCode.log

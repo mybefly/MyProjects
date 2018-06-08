@@ -1,10 +1,10 @@
 #coding:utf-8
 __author__ = "zhaichuang"
 import os,json,datetime,time,sys,jsonpath
-import re
+import re,itchat
 
 class readHar():
-    def __init__(self,harfilePath,islocal=1,level=1,sqlmap='/Users/zhaichuang/Downloads/sqlmapTools'):
+    def __init__(self,harfilePath,islocal=1,level=1,sqlmap='./sqlmapTools'):
         '''
         :param level: 检测级别
         :param harfilePath:  har 源文件路径
@@ -16,10 +16,14 @@ class readHar():
         self.sqlMapPath=sqlmap
         self.harpath = os.path.abspath(harfilePath)
         self.date = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
+        self.apiNumbers=[]
 
+
+        itchat.auto_login(hotReload=True) #微信热启动
         if os.path.isfile(self.harpath):
             self.basePath = os.path.abspath(self.harpath.split("/")[-2])
             self.platName=self.harpath.split("/")[-2]
+            self.harFileNanme = self.harpath.split("/")[-1]
 
             if os.path.isdir(self.basePath+"/%s_shfiles"%self.platName):
                 self.shpath = self.basePath+"/%s_shfiles"%self.platName
@@ -141,7 +145,9 @@ class readHar():
                         #print("资源请求,非接口请求:%s"%url)
                 #=============================================
                 urldictlenth = len(urldict)
-                print(urldictlenth)
+                self.apiNumbers.append(urldictlenth)
+                msg="文件名:%s 接口个数:%d"%(self.harpath,urldictlenth)
+                itchat.send(msg,toUserName="filehelper")
                 urlvs = list(urldict.values())
                 for i in range(urldictlenth):
                     method = urlvs[i]['method']
@@ -161,6 +167,7 @@ class readHar():
                             url = url+"?"
                             shf.write('python %s/sqlmap.py -u "%s" --batch >>%s/%s.log'%(self.sqlMapPath,url,self.logPath,fileName))
                     print(fileName)
+                    itchat.send(fileName,toUserName='filehelper')
                     os.system("chmod 777 %s/%s.sh"%(self.shpath,fileName))
         else:
             print("文件不存在")
@@ -179,10 +186,16 @@ class readHar():
                 os.system("rm -rf /Users/zhaichuang/.sqlmap/output/*")
                 count=count+1
                 print("运行次数:%s 文件:%s 正在运行.."%(count,f))
+                msg = "运行次数:%s 文件:%s 正在运行.."%(count,f)
+                itchat.send(msg,toUserName='filehelper')
                 os.system("sh %s/%s"%(self.shpath,f))
+                msg2= "sh %s/%s"%(self.shpath,f)
+                itchat.send(msg2,toUserName='filehelper')
                 print("sh %s/%s"%(self.shpath,f))
         else:
             print("sh目录不存在")
+
+
     def huigui(self,url=None,*shs):
         shslen=len(shs)
         count=0
@@ -205,11 +218,12 @@ class readHar():
                             cf.write(Lines[0])
                             cf.write(oneLine3)
 
-               print("运行次数:%s 文件:%s 正在运行.."%(count,str(sh)+".sh"))
+               msg = "运行次数:%s 文件:%s 正在运行.."%(count,str(sh)+".sh")
+               itchat.send(msg,toUserName='filehelper')
                os.system("sh %s/%s"%(self.shpath,str(sh)+".sh"))
-               print("sh %s/%s"%(self.shpath,str(sh)+".sh"))
+               # print("sh %s/%s"%(self.shpath,str(sh)+".sh"))
 
-    def countResult(self):
+    def countResult(self,resultSendToUsers=None):
         '''
         读取结果
         :return:
@@ -277,10 +291,25 @@ class readHar():
                                    rf.write("\n")
 
                 tmp=[]
-
-            # print(tmp)
         else:
             print("log目录不存在")
+         #结果发送微信给人
+        self.resultFileName = '%s_result_%s.txt'%(self.platName,self.date)
+        if resultSendToUsers:
+            try:
+                resultSendToUsers = itchat.search_friends(nickName=resultSendToUsers)[0]["UserName"]
+            except Exception:
+                itchat.send("您输入的:%s 不存在"%resultSendToUsers,toUserName="filehelper")
+                resultSendToUsers = 'filehelper'
+        else:
+           resultSendToUsers = 'filehelper'
+
+
+        resultMsg = "文件:%s测试完毕,共测试接口:%s个 生成测试文件:%s ..详细请查看文件内容"%(self.harFileNanme,self.apiNumbers,self.resultFileName)
+        itchat.send(resultMsg,toUserName=resultSendToUsers)
+        filename = "%s/%s_result_%s.txt"%(self.resPath,self.platName,self.date)
+        itchat.send("@fil@%s"%filename,toUserName=resultSendToUsers)
+
 if __name__=="__main__":
 
 
@@ -288,11 +317,12 @@ if __name__=="__main__":
     # dl_client.readHarFile_Client()
     # dl_client.readShTorun()
     #dl_client.countResult()
-
-    gj_MS= readHar("MS/gaojiao.har",islocal=1)
-    gj_MS.readHarFile_MS()
-    # gj_MS.readShTorun()
-    # gj_MS.countResult()
+    HarList = ["ms_userapi","ms_api"]
+    for h in HarList:
+        gj_MS= readHar("MS/%s.har"%h,islocal=1)
+        gj_MS.readHarFile_MS()
+        gj_MS.readShTorun()
+        gj_MS.countResult()
     #gj_MS.huigui("http://172.16.117.216:3000",*[0,1,101,103,104,15,22,32,35,39,4,44,54,56,60,65,67,69,7,71,75,76,81,87,91,93])
     #gj_MS.huigui("http://172.16.117.216:3000",*[0])
     #gj_MS.countResult()

