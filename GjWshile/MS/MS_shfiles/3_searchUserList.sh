@@ -1,2 +1,0 @@
-#!/bin/bash
-python ./sqlmapTools/sqlmap.py -u 'http://172.16.56.199/api/whistleMS/index.php' --data 'm=user&a=searchUserList&device_type=web&school=yingcai&verify=10265_MS_yingcai__web__5b18facd818e1__2fb4fdcf2eabf4130c881435852b1d84__39osTnI13TtVOfMP2qHHfZg53R0giFc23BUw&org_id=1&search_content=11&isSearchMode=true&page=1&count=20' --level=1 --batch >>/Users/zhaichuang/Desktop/MyProjects/GjWshile/MS/MS_logfiles/3_searchUserList.log
