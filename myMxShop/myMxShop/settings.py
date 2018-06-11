@@ -47,14 +47,18 @@ INSTALLED_APPS = [
     'DjangoUeditor',
     #注册reset_framework
     'rest_framework',
+    #注册corsHeaders
+    'corsheaders',
+    #django-filter过滤
+    'django_filters',
     #注册应用apps
     'users',
     'goods',
     'trade',
     'user_operation'
 ]
-
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',#要放的尽可能靠前，必须在CsrfViewMiddleware之前。我们直接放在第一个位置就好了
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -149,3 +153,46 @@ MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 #     'DEFAULT_PAGINATION_CLASS':'rest_framework.pagination.LimitOffsetPagination',
 #     "PAGE_SIZE":3
 # }
+#rest_framwork 配置
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    )
+}
+#corsheaders 配置
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+#自定义用户验证,用户是否存在
+AUTHENTICATION_BACKENDS=(
+    'users.views.CustomeBackend',
+)
+#jwt的配置
+import datetime
+#有效期限
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),    #也可以设置seconds=20
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',                       #JWT跟前端保持一致，比如“token”这里设置成JWT
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

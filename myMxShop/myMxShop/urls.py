@@ -22,16 +22,22 @@ from django.views.static import serve
 from rest_framework.documentation import include_docs_urls
 from myMxShop.settings import MEDIA_ROOT
 #from goods.view_base import GoodsListView
-from goods.views import GoosListViewSet
+from goods.views import GoosListViewSet,CategroyViewSet,BannerViewset
 from users.views import UserList
 from rest_framework.routers import DefaultRouter
+from rest_framework_jwt import views
+
+
 
 router = DefaultRouter()    #实例化 DefaultRouter
-router.register("goods",GoosListViewSet)
+router.register("goods",GoosListViewSet,base_name="goods-list")
+router.register("categorys",CategroyViewSet,base_name="goods-list")
+router.register(r'banners', BannerViewset, base_name="banners")
 
 urlpatterns = [
     #xadmin 配置
     path('xadmin/', xadmin.site.urls),
+    #
     path('ueditor/',include('DjangoUeditor.urls')),
     path('media/<path:path>',serve,{'document_root':MEDIA_ROOT}),
     #drf文档路由,title为标题
@@ -40,9 +46,12 @@ urlpatterns = [
     path('api-auth/',include_docs_urls('rest_framework.urls')),
 
     #个人接口配置
-    path('^',include('router.urls')),
+    path('',include(router.urls)),
     #path('goods/',GoosListView.as_view(),name='goods-list'),
-    path('users/',UserList.as_view(),name='users-list')
+    path('users/',UserList.as_view(),name='users-list'),
+
+    #使用jwt配置token验证接口
+    path('login/',views.obtain_jwt_token)
 
 
 ]
